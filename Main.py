@@ -2,7 +2,7 @@
 Author: LetMeFly
 Date: 2022-09-29 15:16:51
 LastEditors: LetMeFly
-LastEditTime: 2022-09-29 18:16:12
+LastEditTime: 2022-09-29 18:30:28
 '''
 import os
 import time
@@ -14,6 +14,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 """Generate begin"""
 # document.querySelector("#repos > ol").querySelectorAll("li")
+# https://docs.github.com/cn/rest/activity/starring#list-stargazers
 nowPage = 1
 allUsers = []
 while True:
@@ -30,13 +31,22 @@ while True:
         #     avatarSrc = avatarA.find("img").get("src")
         #     username = li.find("span").find("a").string
         #     allUsers.append(f"<li><img src=\"{avatarSrc}\" style=\"border-radius: 50% !important;\" with=\"96px\" height=\"96px\"><a href=\"{href}\">{username}</a></li>")
+        def getHeaders():
+            if os.environ.get("GITHUB_TOKEN"):
+                headers = {
+                    "Authorization": "Bearer " + os.environ.get("GITHUB_TOKEN"),
+                }
+            else:
+                headers = {}
+            return headers
         response = requests.get(
             url="https://api.github.com/repos/LetMeFly666/WhoStarredMe/stargazers",
             verify=False,
             params={
-                "per_page": 1,
+                "per_page": 100,
                 "page": nowPage
             },
+            headers = getHeaders(),
         )
         if not response.json():
             break
@@ -47,6 +57,11 @@ while True:
         nowPage += 1
     except BaseException as e:
         print(e)
+        try:
+            print(response)
+            print(response.json())
+        except:
+            pass
         break
 # allUsers.reverse()
 
