@@ -2,7 +2,7 @@
 Whoever starred the project will be seen here tomorrow. First come, first served. | 谁star了这个项目，谁明天就会显示在这里，先到先得。
 
 
-Whom starred the repo are:
+**Whom starred the repo are:**
 
 <LetMeFly id="LetMeFly_Anchor1_Begin"></LetMeFly>
 
