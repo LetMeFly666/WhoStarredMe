@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v3
       
       - name: Checkout
-        uese: actions/setup-python@v3
+        uses: actions/setup-python@v3
 
       # Runs a single command using the runners shell
       - name: Generate the README
