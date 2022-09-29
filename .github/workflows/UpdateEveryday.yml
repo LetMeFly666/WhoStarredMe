@@ -33,9 +33,7 @@ jobs:
       
       - name: Install python packages
         run: |
-          pip install lxml
           pip install requests
-          pip install bs4
 
       # Runs a single command using the runners shell
       - name: Generate the README

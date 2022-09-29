@@ -2,12 +2,11 @@
 Author: LetMeFly
 Date: 2022-09-29 15:16:51
 LastEditors: LetMeFly
-LastEditTime: 2022-09-29 17:48:33
+LastEditTime: 2022-09-29 18:12:51
 '''
 import os
 import time
 import requests
-from bs4 import BeautifulSoup
 
 
 with open("README.md", "r", encoding="utf-8") as f:
@@ -18,24 +17,34 @@ with open("README.md", "r", encoding="utf-8") as f:
 nowPage = 1
 allUsers = []
 while True:
-    try:
-        response = requests.get(f"https://github.com/LetMeFly666/WhoStarredMe/stargazers?page={nowPage}", verify=False)
-        print(response)
-        soup = BeautifulSoup(response.content, 'lxml')
-        repos = soup.find("div", attrs={"id": "repos"})
-        ol = repos.find("ol")
-        for li in ol.find_all("li"):
-            div = li.find("div")
-            avatarA = div.find("a")
-            href = "https://github.com" + avatarA.get("href")
-            avatarSrc = avatarA.find("img").get("src")
-            username = li.find("span").find("a").string
-            allUsers.append(f"<li><img src=\"{avatarSrc}\" style=\"border-radius: 50% !important;\" with=\"96px\" height=\"96px\"><a href=\"{href}\">{username}</a></li>")
-        nowPage += 1
-    except BaseException as e:
-        print(e)
+    # response = requests.get(f"https://github.com/LetMeFly666/WhoStarredMe/stargazers?page={nowPage}", verify=False)
+    # print(response)
+    # soup = BeautifulSoup(response.content, 'lxml')
+    # repos = soup.find("div", attrs={"id": "repos"})
+    # ol = repos.find("ol")
+    # for li in ol.find_all("li"):
+    #     div = li.find("div")
+    #     avatarA = div.find("a")
+    #     href = "https://github.com" + avatarA.get("href")
+    #     avatarSrc = avatarA.find("img").get("src")
+    #     username = li.find("span").find("a").string
+    #     allUsers.append(f"<li><img src=\"{avatarSrc}\" style=\"border-radius: 50% !important;\" with=\"96px\" height=\"96px\"><a href=\"{href}\">{username}</a></li>")
+    response = requests.get(
+        url="https://api.github.com/repos/LetMeFly666/WhoStarredMe/stargazers",
+        verify=False,
+        params={
+            "per_page": 1,
+            "page": nowPage
+        },
+    )
+    if not response.json():
         break
-allUsers.reverse()
+    if nowPage > 10000:
+        raise ValueError("项目有100万个star了？")
+    for thisUser in response.json():
+        allUsers.append(f"<li><img src=\"{thisUser['avatar_url']}\" style=\"border-radius: 50% !important;\" with=\"96px\" height=\"96px\"><a href=\"{thisUser['html_url']}\">{thisUser['login']}</a></li>")
+    nowPage += 1
+# allUsers.reverse()
 
 LetMeFLetMeFly_Anchor1_Begin = "<LetMeFly id=\"LetMeFly_Anchor1_Begin\"></LetMeFly>"
 LetMeFLetMeFly_Anchor1_End = "<LetMeFly id=\"LetMeFly_Anchor1_End\"></LetMeFly>"
