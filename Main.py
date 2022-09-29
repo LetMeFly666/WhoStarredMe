@@ -2,7 +2,7 @@
 Author: LetMeFly
 Date: 2022-09-29 15:16:51
 LastEditors: LetMeFly
-LastEditTime: 2022-09-29 16:52:53
+LastEditTime: 2022-09-29 16:54:24
 '''
 import os
 import time
@@ -44,7 +44,7 @@ contentBack = temp.split(LetMeFLetMeFly_Anchor1_End)[1]
 content = contentFront + "\n" * 2 + "<ol>\n"
 for thisUser in allUsers:
     content += "    " + thisUser + "\n"
-content += "</ul>\n\n"
+content += "</ol>\n\n"
 content += contentBack
     
 """Generate End"""
