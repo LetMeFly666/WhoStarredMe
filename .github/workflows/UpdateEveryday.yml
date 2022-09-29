@@ -23,6 +23,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v3
+      
+      - name: Checkout
+        uese: actions/setup-python@v3
 
       # Runs a single command using the runners shell
       - name: Generate the README
@@ -33,8 +36,8 @@ jobs:
           echo *******cat README.md*******
           cat README.md
 
-          echo *******echo 66666>> README.md*******
-          echo 66666>> README.md
+          echo *******python Main.py*******
+          python Main.py
 
           echo *******cat README.md*******
           cat README.md
