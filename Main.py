@@ -2,7 +2,7 @@
 Author: LetMeFly
 Date: 2022-09-29 15:16:51
 LastEditors: LetMeFly
-LastEditTime: 2022-09-29 18:30:28
+LastEditTime: 2022-09-29 18:32:42
 '''
 import os
 import time
@@ -38,6 +38,7 @@ while True:
                 }
             else:
                 headers = {}
+            print(headers)
             return headers
         response = requests.get(
             url="https://api.github.com/repos/LetMeFly666/WhoStarredMe/stargazers",
