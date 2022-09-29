@@ -2,7 +2,7 @@
 Author: LetMeFly
 Date: 2022-09-29 15:16:51
 LastEditors: LetMeFly
-LastEditTime: 2022-09-29 16:58:58
+LastEditTime: 2022-09-29 17:48:33
 '''
 import os
 import time
@@ -19,7 +19,7 @@ nowPage = 1
 allUsers = []
 while True:
     try:
-        response = requests.get(f"https://github.com/SKrisanski/FSCT/stargazers?page={nowPage}", verify=False)
+        response = requests.get(f"https://github.com/LetMeFly666/WhoStarredMe/stargazers?page={nowPage}", verify=False)
         print(response)
         soup = BeautifulSoup(response.content, 'lxml')
         repos = soup.find("div", attrs={"id": "repos"})
