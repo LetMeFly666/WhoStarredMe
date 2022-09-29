@@ -36,7 +36,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Generate the README
         env: |
-          LetMeFly_OnGithub: True
+          LetMeFly_OnGithub: "True"
         run: |
           echo *******ls*******
           ls
