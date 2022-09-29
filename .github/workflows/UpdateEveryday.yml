@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # The Env must be written here!!!
-    env: |
+    env:
       LetMeFly_OnGithub: True
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
