@@ -2,7 +2,7 @@
 Author: LetMeFly
 Date: 2022-09-29 15:16:51
 LastEditors: LetMeFly
-LastEditTime: 2022-09-29 16:54:24
+LastEditTime: 2022-09-29 16:58:58
 '''
 import os
 import time
@@ -41,10 +41,10 @@ LetMeFLetMeFly_Anchor1_Begin = "<LetMeFly id=\"LetMeFly_Anchor1_Begin\"></LetMeF
 LetMeFLetMeFly_Anchor1_End = "<LetMeFly id=\"LetMeFly_Anchor1_End\"></LetMeFly>"
 contentFront, temp = content.split(LetMeFLetMeFly_Anchor1_Begin)
 contentBack = temp.split(LetMeFLetMeFly_Anchor1_End)[1]
-content = contentFront + "\n" * 2 + LetMeFLetMeFly_Anchor1_Begin + "<ol>\n"
+content = contentFront + LetMeFLetMeFly_Anchor1_Begin + "\n\nUpdated at: " + time.strftime("%Y-%m-%d") + "\n\n<ol>\n"
 for thisUser in allUsers:
     content += "    " + thisUser + "\n"
-content += "</ol>\n\n" + LetMeFLetMeFly_Anchor1_End + "\n\n"
+content += "</ol>\n\n" + LetMeFLetMeFly_Anchor1_End
 content += contentBack
     
 """Generate End"""
