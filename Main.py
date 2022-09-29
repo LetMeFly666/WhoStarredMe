@@ -2,7 +2,7 @@
 Author: LetMeFly
 Date: 2022-09-29 15:16:51
 LastEditors: LetMeFly
-LastEditTime: 2022-09-29 16:29:14
+LastEditTime: 2022-09-29 16:52:53
 '''
 import os
 import time
@@ -30,7 +30,7 @@ while True:
             href = "https://github.com" + avatarA.get("href")
             avatarSrc = avatarA.find("img").get("src")
             username = li.find("span").find("a").string
-            allUsers.append(f"<li><img src=\"{avatarSrc}\" style=\"border-radius: 50% !important;\"><a href=\"{href}\">{username}</a></li>")
+            allUsers.append(f"<li><img src=\"{avatarSrc}\" style=\"border-radius: 50% !important;\" with=\"96px\" height=\"96px\"><a href=\"{href}\">{username}</a></li>")
         nowPage += 1
     except BaseException as e:
         print(e)
