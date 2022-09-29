@@ -27,5 +27,15 @@ jobs:
       # Runs a single command using the runners shell
       - name: Generate the README
         run: |
-          echo ls
+          echo *******ls*******
           ls
+
+          echo *******cat README.md*******
+          cat README.md
+
+          echo *******echo 66666>> README.md*******
+          echo 66666>> README.md
+
+          echo *******cat README.md*******
+          cat README.md
+
