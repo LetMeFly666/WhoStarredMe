@@ -25,3 +25,10 @@ Updated at: 2022-09-29
 ---
 
 The End.
+
+## TODO:
+
++ 当前最多支持显示40000人，这是由于Github Action默认的GITHUB_TOKEN最多在短时间内调用400次API。可使用私有TOKEN。
++ 当Star人数过多时，Github主页将不能展示README，且网页加载过慢。应当采取多页机制。
+
+上面这俩就等star数上去了再说吧！
