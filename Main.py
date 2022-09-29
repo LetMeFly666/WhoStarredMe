@@ -2,7 +2,7 @@
 Author: LetMeFly
 Date: 2022-09-29 15:16:51
 LastEditors: LetMeFly
-LastEditTime: 2022-09-29 18:44:37
+LastEditTime: 2022-09-29 19:02:57
 '''
 import os
 import time
@@ -40,7 +40,7 @@ while True:
                 headers = {}
             return headers
         response = requests.get(
-            url="https://api.github.com/repos/vinta/awesome-python/stargazers",
+            url="https://api.github.com/repos/LetMeFly666/WhoStarredMe/stargazers",
             verify=False,
             params={
                 "per_page": 100,
