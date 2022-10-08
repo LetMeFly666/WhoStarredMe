@@ -1,5 +1,5 @@
 # WhoStarredMe
-Whoever starred the project will be seen here tomorrow. First come, first served. | 谁star了这个项目，谁明天就会显示在这里，先到先得。
+Whoever starred [the project](https://github.com/LetMeFly666/WhoStarredMe) will be seen here tomorrow. First come, first served. | 谁star了[这个项目](https://github.com/LetMeFly666/WhoStarredMe)，谁明天就会显示在这里，先到先得。
 
 See [https://whostarredme.letmefly.xyz](https://whostarredme.letmefly.xyz) For More.
 
