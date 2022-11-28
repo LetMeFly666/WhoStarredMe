@@ -13,13 +13,14 @@ We can only support 40000 People now. | 此项目最多支持显示40000人。
 
 <LetMeFly id="LetMeFly_Anchor1_Begin"></LetMeFly>
 
-Updated at: 2022-11-27, 4 in total.
+Updated at: 2022-11-28, 5 in total.
 
 <ol>
     <li><img src="https://avatars.githubusercontent.com/u/55907733?v=4" style="border-radius: 50% !important;" with="96px" height="96px"><a href="https://github.com/YeeBy2019">YeeBy2019</a></li>
     <li><img src="https://avatars.githubusercontent.com/u/56995506?v=4" style="border-radius: 50% !important;" with="96px" height="96px"><a href="https://github.com/LetMeFly666">LetMeFly666</a></li>
     <li><img src="https://avatars.githubusercontent.com/u/88925368?v=4" style="border-radius: 50% !important;" with="96px" height="96px"><a href="https://github.com/Tisfy">Tisfy</a></li>
     <li><img src="https://avatars.githubusercontent.com/u/69671611?v=4" style="border-radius: 50% !important;" with="96px" height="96px"><a href="https://github.com/Finfrank">Finfrank</a></li>
+    <li><img src="https://avatars.githubusercontent.com/u/71332326?v=4" style="border-radius: 50% !important;" with="96px" height="96px"><a href="https://github.com/insolitum">insolitum</a></li>
 </ol>
 
 <LetMeFly id="LetMeFly_Anchor1_End"></LetMeFly>
