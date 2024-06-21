@@ -13,7 +13,7 @@ We can only support 40000 People now. | 此项目最多支持显示40000人。
 
 <LetMeFly id="LetMeFly_Anchor1_Begin"></LetMeFly>
 
-Updated at: 2024-06-20, 7 in total.
+Updated at: 2024-06-21, 8 in total.
 
 <ol>
     <li><img src="https://avatars.githubusercontent.com/u/55907733?v=4" style="border-radius: 50% !important;" with="96px" height="96px"><a href="https://github.com/YeeBy2019">YeeBy2019</a></li>
@@ -23,6 +23,7 @@ Updated at: 2024-06-20, 7 in total.
     <li><img src="https://avatars.githubusercontent.com/u/75560320?v=4" style="border-radius: 50% !important;" with="96px" height="96px"><a href="https://github.com/spln13">spln13</a></li>
     <li><img src="https://avatars.githubusercontent.com/u/35966153?v=4" style="border-radius: 50% !important;" with="96px" height="96px"><a href="https://github.com/Sensente">Sensente</a></li>
     <li><img src="https://avatars.githubusercontent.com/u/132818886?v=4" style="border-radius: 50% !important;" with="96px" height="96px"><a href="https://github.com/vme50ty">vme50ty</a></li>
+    <li><img src="https://avatars.githubusercontent.com/u/83209786?v=4" style="border-radius: 50% !important;" with="96px" height="96px"><a href="https://github.com/AakashRawat04">AakashRawat04</a></li>
 </ol>
 
 <LetMeFly id="LetMeFly_Anchor1_End"></LetMeFly>
