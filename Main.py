@@ -2,7 +2,7 @@
 Author: LetMeFly
 Date: 2022-09-29 15:16:51
 LastEditors: LetMeFly
-LastEditTime: 2024-10-01 16:34:59
+LastEditTime: 2024-10-01 16:57:02
 '''
 import os
 import time
@@ -96,5 +96,5 @@ def execute1commandAfterEcho(command):
 execute1commandAfterEcho("git config --global user.email \"Tisfy@foxmail.com\"")
 execute1commandAfterEcho("git config --global user.name \"Tisfy\"")
 execute1commandAfterEcho("git add .")
-execute1commandAfterEcho("git commit -m \"Updated on {}\"".format(time.strftime("%Y-%m-%d")))
+execute1commandAfterEcho("git commit -m \"update: {}\"".format(time.strftime("%Y-%m-%d")))
 execute1commandAfterEcho("git push")
